@@ -1,10 +1,28 @@
+body {
+    font-family: fantasy;
+}
+
 p {
     color:deeppink;
-    font-family: fantasy;
     font-size: xx-large;
 }
 
 img {
     width: 400px;
     border: 50px dotted greenyellow;
+}
+
+.input {
+    background-color: khaki;
+    padding: 20px;
+
+}
+
+header {
+    display: block;
+    
+}
+
+button {
+    
 }
