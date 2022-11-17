@@ -3,3 +3,8 @@ p {
     font-family: fantasy;
     font-size: xx-large;
 }
+
+img {
+    width: 400px;
+    border: 50px dotted greenyellow;
+}
