@@ -10,19 +10,32 @@
     </head>
     <body>
         <!-- Navigationsleiste -->
-        <div class="container">
-            <h1>Kekse</h1>
+        <div class="container-fluid bg-dark text-white p-1">
+            <p class="display-1">Kekse</p>
         </div>
         <!--<header>
             <h1>Datenschutzinfo im BBW</h1>
         </header>-->
-        <p>Ich mag Kekse.</p>
-        <p>Wir alle mögen Kekse.</p>
-        <p>Magst du Kekse?</p>
-
-        <div class="input">
-            <input type="button" onclick="alert('Vielen Dank! Du hast deine Seele verkauft!')" value="Ja">
-            <input type="button" onclick="alert('Frech')" value="Nein">
+        <div class="row">
+            <div class="col">
+                <div class="container">
+                    <p>Ich mag Kekse.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="container">
+                    <p>Wir alle mögen Kekse.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container bg-dark text-white p-3 my-2">
+            <p>Magst du Kekse?</p>
+        
+            <div class="input">
+                <input type="button" onclick="alert('Vielen Dank! Du hast deine Seele verkauft!')" value="Ja">
+                <input type="button" onclick="alert('Frech')" value="Nein">
+            </div>
         </div>
     </body>
 </html>
