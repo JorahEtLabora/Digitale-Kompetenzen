@@ -31,4 +31,4 @@ function checkCookie() {
         }
     }
 }
-checkCookie();
+/* checkCookie(); */
