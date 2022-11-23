@@ -23,7 +23,11 @@ function getCookie(cname) {
 function checkCookie() {
     let user = getCookie("username");
     if (user != "") {
-        alert("Welcome again " + user);
+        /*alert("Welcome again " + user);*/
+        document.getElementById("checkCookieMessage").innerHTML = "Welcome again " + user;
+        $(document).ready(function(){
+            $("#checkCookieToast").toast("show");
+        });
     } else {
         user = prompt("Please enter your name:", "");
         if (user != "" && user != null) {
