@@ -31,4 +31,4 @@ function checkCookie() {
         }
     }
 }
-/* checkCookie(); */
+/* checkCookie(); Wird jetzt ausgeführt, wenn auf der Seite Cookies akzeptiert werden.*/
