@@ -29,7 +29,10 @@ function checkCookie() {
             $("#checkCookieToast").toast("show");
         });
     } else {
-        user = prompt("Please enter your name:", "");
+        $(document).ready(function getUsername(){
+            $("#inputModal").modal("show");
+        });
+        user = document.getElementById("nutzer-name").value;
         if (user != "" && user != null) {
             setCookie("username", user, 365);
         }
