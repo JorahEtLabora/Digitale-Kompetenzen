@@ -29,13 +29,20 @@ function checkCookie() {
             $("#checkCookieToast").toast("show");
         });
     } else {
-        $(document).ready(function getUsername(){
-            $("#inputModal").modal("show");
+        $(document).ready(function(){
+            $("#myModal").modal('show');
         });
-        user = document.getElementById("nutzer-name").value;
-        if (user != "" && user != null) {
-            setCookie("username", user, 365);
-        }
+        
     }
 }
-/* checkCookie(); Wird jetzt ausgeführt, wenn auf der Seite Cookies akzeptiert werden.*/
+
+function setUsernameCookie() {
+    $(document).ready(function getUsername(){
+        $("#inputModal").modal("show");
+    });
+    user = document.getElementById("nutzer-name").value;
+    if (user != "" && user != null) {
+        setCookie("username", user, 365);
+    }
+}
+checkCookie()

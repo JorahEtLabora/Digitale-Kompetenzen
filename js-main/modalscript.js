@@ -1,6 +1,4 @@
-$(document).ready(function(){
-    $("#myModal").modal('show');
-});
+
 
 /* Toasts */
 /* Cookies abgelehnt */
