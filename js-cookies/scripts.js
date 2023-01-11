@@ -44,8 +44,5 @@ function setUsernameCookie() {
     if (user != "" && user != null) {
         setCookie("username", user, 365);
     }
-    else {
-        alert("Deine Mama");
-    }
 }
 checkCookie()
