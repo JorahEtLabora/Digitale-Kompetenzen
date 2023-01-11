@@ -8,14 +8,11 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="..\css\style.css">
         
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
         
         <!-- eigenes JavaScript -->
-        <script src="..\js-main\modalscript.js"></script>
-        <script src="..\js-cookies\scripts.js"></script>
+        
     </head>
     <body>
         <!-- Navigationsleiste -->
@@ -125,109 +122,5 @@
                 Tests
             </p>
         </div>
-
-        <!-- Modal -->
-        <div class="modal fade overflow-hidden" id="myModal" data-bs-backdrop="static">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-
-                    <!-- Header -->
-                    <div class="modal-header">
-                        <h4 class="modal-title">
-                            Cookies akzeptieren?
-                        </h4>
-                    </div>
-
-                    <!-- Body -->
-                    <div class="modal-body">
-                        Cookies nach <i>unseren Richtlinien</i> annehmen?
-                    </div>
-
-                    <!-- Footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="cookie-dismiss">
-                            Cookies ablehnen
-                        </button>
-                        <button id="cookie-accept" type="button" class="btn btn-success" data-bs-dismiss="modal" onclick="setUsernameCookie()">
-                            Cookies akzeptieren
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Toast Cookies abgelehnt -->
-        <div class="toast-container position-fixed bottom-0 end-0 p-3 overflow-hidden">
-            <div id="rejectedToast" class="toast text-bg-warning border-0" role="alert">
-                <div class="toast-header">
-                    <strong class="me-auto">
-                        Hinweis
-                    </strong>
-                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                </div>
-                <div class="toast-body">
-                    Du verwendest unsere Seite ohne Cookies!
-                </div>
-            </div>
-        </div>
-
-        <!-- Toast Cookies akzeptiert -->
-        <div class="toast-container position-fixed bottom-0 end-0 p-3 overflow-hidden">
-            <div id="acceptedToast" class="toast text-bg-warning border-0" role="alert">
-                <div class="toast-header">
-                    <strong class="me-auto">
-                        Hinweis
-                    </strong>
-                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                </div>
-                <div class="toast-body">
-                    Du verwendest unsere Seite mit Cookies!
-                </div>
-            </div>
-        </div>
-
-        <!-- Toast zu checkCookie -->
-        <div class="toast-container position-fixed bottom-0 end-0 p-3 overflow-hidden">
-            <div id="checkCookieToast" class="toast text-bg-success border-0" role="alert">
-                <div class="toast-header">
-                    <strong class="me-auto">
-                        Alert
-                    </strong>
-                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                </div>
-                <div class="toast-body" >
-                    <p id="checkCookieMessage"></p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal für Input -->
-        <div class="modal fade overflow-hidden" id="inputModal" tabindex="-1">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">
-                            Nutzerinformationen eingeben
-                        </h4>
-                    </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="mb-3">
-                                <label for="nutzer-name" class="col-form-label">
-                                    Name:
-                                </label>
-                                <input type="text" class="form-control" id="nutzer-name" for="nutzername">
-                            </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
-                            Bestätigen
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </body>
 </html>
