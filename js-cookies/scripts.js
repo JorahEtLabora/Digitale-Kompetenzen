@@ -22,7 +22,7 @@ function getCookie(cname) {
 
 function checkCookie() {
     let user = getCookie("username");
-    if (user != "") {
+    if (user != "" && user != null) {
         alert("Welcome again " + user);
         document.getElementById("checkCookieMessage").innerHTML = "Welcome again " + user;
         $(document).ready(function(){
