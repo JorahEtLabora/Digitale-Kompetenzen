@@ -1,8 +1,8 @@
-function setCookie(cname, cvalue, exdays) {
+function setCookie(cname, user, exdays) {
     const d = new Date();
     d.setTime(d.getTime() + (exdays * 60 * 20));
     let expires = "expires="+d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    document.cookie = cname + "=" + user + ";" + expires + ";path=/";
 }
 
 function getCookie(cname) {
