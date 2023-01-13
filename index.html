@@ -116,21 +116,5 @@
                 
             </p>
         </div>
-
-        <!-- Container für Tests -->
-        <div class="container overflow-hidden">
-            <p class="display-7">
-                Tests
-            </p>
-            <script>
-                $.getJSON("https://api.ipify.org?format=json", function(data) {
-                    $("#gfg").html(data.ip);
-                })
-            </script>
-            <p class="display-7">
-                Deine öffentliche IP-Adresse ist:
-            </p>
-            <p id="gfg"></p>
-        </div>
     </body>
 </html>
