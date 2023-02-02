@@ -15,3 +15,6 @@
 .overflow-hidden{
     overflow-x: hidden;
 }
+video {
+    overflow: hidden;
+}
