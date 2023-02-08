@@ -4,17 +4,11 @@
     padding-right: 15px;
     padding-left: 15px;
 }
-/* @media (max-width: 766px){
-    .overflow-hidden{
-        overflow-x: hidden;
-    }
-    .overflow-visible{
-        overflow-x: visible;
-    }
-} */
+
 .overflow-hidden{
     overflow-x: hidden;
 }
-/* video {
-    overflow: hidden;
-} */
+
+hr.dotted {
+    border-top: 3px dotted;
+}
