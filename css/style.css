@@ -10,5 +10,8 @@
 }
 
 hr.dotted {
-    border-top: 3px dotted;
+    border-top: 10px solid transparent;
+    padding: 15px;
+    border-image-source: url(http://www.w3.org/2000/svg);
+    border-image-repeat: repeat;
 }
