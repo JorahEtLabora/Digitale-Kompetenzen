@@ -46,10 +46,12 @@
     background-color: #dd4343;
 }
 
+/* keine Rahmenlinie um Dropdown-Menü */
 .dropdown-menu {
     border: 0px;
 }
 
+/* Padding auf der linken Seite im Footer wird auf Mobilgeräten entfernt */
 @media (max-width: 767px) {
     .footer {
         padding-left: 0;
