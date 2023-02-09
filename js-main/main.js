@@ -10,11 +10,11 @@ $(document).ready(function() {
   });
 
 // Button für Navigationsleiste in mobiler Ansicht
-document.getElementById("navbarTogglerButton").addEventListener("click", function() {
+/* document.getElementById("navbarTogglerButton").addEventListener("click", function() {
   let navbarCollapse = document.getElementById("navbarSupportedContent");
   if (navbarCollapse.classList.contains("collapse")) {
     navbarCollapse.classList.remove("collapse");
   } else {
     navbarCollapse.classList.add("collapse");
   }
-});
+}); */
