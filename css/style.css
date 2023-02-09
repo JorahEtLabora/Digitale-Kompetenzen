@@ -57,3 +57,10 @@
         padding-left: 0;
     }
 }
+
+/* Design Links */
+a {
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    color:crimson;
+}
