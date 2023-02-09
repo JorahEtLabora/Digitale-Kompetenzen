@@ -2,64 +2,70 @@
 <html lang="de">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Phishing & Spam</title>
-        <link href="https://lokcenter.github.io/Digitale_Kompetenzen_Website/style/style.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="https://lokcenter.github.io/Digitale_Kompetenzen_Website/media/favicon.ico"/>
+        <link rel="stylesheet" href="https://lokcenter.github.io/Digitale_Kompetenzen_Website/css/style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
         
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        
+        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="https://lokcenter.github.io/Digitale_Kompetenzen_Website/js-main/main.js"></script>
         
     </head>
     <body>
         <!-- Seitentitel -->
-        <div class="container-fluid p-1 pt-3 text-center text-bg-dark overflow-hidden">
-            <p class="display-2">
+        <div class="container-fluid p-1 pt-3 text-center text-bg-dark">
+            <p class="display-2" id="Seitentiteltext">
                 Digitale Kompetenzen im BBW
             </p>
         </div>
         <!-- Navigationsleiste -->
-        <div class="container-fluid text-bg-dark pb-3">
-            <!-- Links zu Subpages -->
-            <ul class="nav nav-pills">
-                <!-- Link zu index.html -->
-                <li class="nav-item">
-                    <a class="nav-link" href="https://lokcenter.github.io/Digitale_Kompetenzen_Website/">
-                        Startseite
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://lokcenter.github.io/Digitale_Kompetenzen_Website/about.html">
-                        Über das Projekt
-                    </a>
-                </li>
-                <!-- Button für Dropdown-Menü, Informationen zu Themengebieten -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
-                        Infos
-                    </a>
-                    <!-- Dropdown-Menü -->
-                    <ul class="dropdown-menu">
-                        <!-- Header Themengebiet Sicherheit -->
-                        <li>
-                            <h5 class="dropdown-header">
-                                Sicherheit
-                            </h5>
-                        </li>
-                        <!-- Link zu cookies.html -->
-                        <li>
-                            <a class="dropdown-item" href="https://lokcenter.github.io/Digitale_Kompetenzen_Website/cookies.html">
-                                Cookies
+        <div class="container-fluid text-bg-dark pb-1">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="https://lokcenter.github.io/Digitale_Kompetenzen_Website/"><i class="bi bi-signpost-split"></i></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="navbarTogglerButton">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://lokcenter.github.io/Digitale_Kompetenzen_Website/">
+                                Startseite
                             </a>
                         </li>
-                        <!-- Link zu (Phishing-Mails) -->
-                        <li>
-                            <a class="dropdown-item" href="#">
-                                Phishing-Mails
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://lokcenter.github.io/Digitale_Kompetenzen_Website/about.html">
+                                Über das Projekt
                             </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Themen
+                            </a>
+                            <div class="dropdown-menu shadow p-3 mb-5 bg-body rounded" aria-labelledby="navbarDropdown">
+                                <h5 class="dropdown-header">
+                                    Sicherheit
+                                </h5>
+                                <a class="dropdown-item" href="https://lokcenter.github.io/Digitale_Kompetenzen_Website/cookies.html">
+                                    Cookies
+                                </a>
+                                <a class="dropdown-item" href="https://lokcenter.github.io/Digitale_Kompetenzen_Website/spam.html">
+                                    Phishing & Spam
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">
+                                    Something else here
+                                </a>
+                            </div>
                         </li>
                     </ul>
-                </li>
-            </ul>
+                </div>
+            </nav>
         </div>
         <!-- Überschrift Thema -->
         <div class="container mt-3 overflow-hidden">
@@ -68,16 +74,11 @@
             </p>
         </div>
         <!-- Seiteninhalt -->
-        <div id="Überschrift 2" class="container overflow-hidden">
-            <p class="display-6">
-                Spam
-            </p>
-        </div>
-        <div id="Seiteninhalt" class="container mt-3  overflow-hidden">
+        <div class="container mt-3 overflow-hidden">
             <div class="row">
                 <div class="col-md-6">
                     <video controls class="w-100">
-                        <source src="https://lokcenter.github.io/Digitale_Kompetenzen_Website/media/E-Mail_Sicherheitscheck.mp4" type="video/mp4" />
+                        <source src="https://multimedia.gsb.bund.de/BSI/Video/Sicher_im_Internet/E-Mail_Sicherheitscheck.mp4" type="video/mp4" />
                     </video>
                 </div>
                 <div class="col-md-6">
@@ -87,5 +88,51 @@
                 </div>
             </div>
         </div>
+
+        <footer class="footer mt-3 pt-1 pb-1 bg-dark text-white">
+            <div class="container">
+                <hr>
+                <div class="row justify-content-around">
+                    <div class="col-auto align-self-center">
+                        <p>
+                        <a href="https://www.stiftung-liebenau.de/" target="_blank">
+                            <img src="https://lokcenter.github.io/Digitale_Kompetenzen_Website/media/StiftungLiebenauLogo.png" width="150px">
+                        </a>
+                        </p>
+                    </div>
+                    <div class="col-auto align-self-center">
+                        <p>
+                            Hier steht was interessantes
+                        </p>
+                    </div>
+                    <div class="col-auto align-self-center">
+                        <!-- <h3>
+                            Adresse
+                        </h3> -->
+                        <ul class="list-unstyled">
+                            <li>
+                                Liebenau Berufsbildungswerk gemeinnützige GmbH
+                            </li>
+                            <li>
+                                Außenstelle Lok-Center
+                            </li>
+                            <li>
+                                Pfannenstiel 16
+                            </li>
+                            <li>
+                                88214 Ravensburg
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </footer>
     </body>
+    <script>
+        document.getElementById("navbarTogglerButton").addEventListener("click", function() {
+            let navbar = document.getElementById("navbarSupportedContent");
+            navbar.classList.toggle("show");
+        });
+    </script>
 </html>
