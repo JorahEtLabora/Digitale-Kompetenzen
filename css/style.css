@@ -49,3 +49,9 @@
 .dropdown-menu {
     border: 0px;
 }
+
+@media (max-width: 767px) {
+    .footer {
+        padding-left: 0;
+    }
+}
