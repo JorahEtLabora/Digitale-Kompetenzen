@@ -2,120 +2,143 @@
 <html lang="de">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Digitale Kompetenzen im BBW</title>
-
-        <link rel="stylesheet" href="https://lokcenter.github.io/Digitale_Kompetenzen_Website/style/style.css">
+        <link rel="icon" type="image/png" href="https://lokcenter.github.io/Digitale_Kompetenzen_Website/media/favicon.ico"/>
+        <link rel="stylesheet" href="https://lokcenter.github.io/Digitale_Kompetenzen_Website/css/style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
         
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
         
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
-        
-        <!-- eigenes JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="https://lokcenter.github.io/Digitale_Kompetenzen_Website/js-main/main.js"></script>
         
     </head>
     <body>
-        <!-- Navigationsleiste -->
-        <div class="container-fluid p-1 pt-3 text-center text-bg-dark overflow-hidden">
-            <p class="display-2">
+        <!-- Seitentitel -->
+        <div class="container-fluid p-1 pt-3 text-center text-bg-dark">
+            <p class="display-2" id="Seitentiteltext">
                 Digitale Kompetenzen im BBW
             </p>
         </div>
-        <div class="container-fluid text-bg-dark pb-3 ">
-            <ul class="nav nav-pills">
-                <li class="nav-item">
-                    <a class="nav-link" href="https://lokcenter.github.io/Digitale_Kompetenzen_Website/">
-                        Startseite
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://lokcenter.github.io/Digitale_Kompetenzen_Website/about.html">
-                        Über das Projekt
-                    </a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
-                        Infos
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <h5 class="dropdown-header">
-                                Sicherheit
-                            </h5>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="https://lokcenter.github.io/Digitale_Kompetenzen_Website/cookies.html">
-                                Cookies
+        <!-- Navigationsleiste -->
+        <div class="container-fluid text-bg-dark pb-1">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="https://lokcenter.github.io/Digitale_Kompetenzen_Website/"><i class="bi bi-signpost-split"></i></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="navbarTogglerButton">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://lokcenter.github.io/Digitale_Kompetenzen_Website/">
+                                Startseite
                             </a>
                         </li>
-                        <li>
-                            <a class="dropdown-item" href="https://lokcenter.github.io/Digitale_Kompetenzen_Website/spam.html">
-                                Phishing & Spam
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://lokcenter.github.io/Digitale_Kompetenzen_Website/about.html">
+                                Über das Projekt
                             </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Themen
+                            </a>
+                            <div class="dropdown-menu shadow p-3 mb-5 bg-body rounded" aria-labelledby="navbarDropdown">
+                                <h5 class="dropdown-header">
+                                    Sicherheit
+                                </h5>
+                                <a class="dropdown-item" href="https://lokcenter.github.io/Digitale_Kompetenzen_Website/cookies.html">
+                                    Cookies
+                                </a>
+                                <a class="dropdown-item" href="https://lokcenter.github.io/Digitale_Kompetenzen_Website/spam.html">
+                                    Phishing & Spam
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">
+                                    Something else here
+                                </a>
+                            </div>
                         </li>
                     </ul>
-                </li>
-            </ul>
+                </div>
+            </nav>
         </div>
+        <!-- Überschrift Thema -->
         <div class="container mt-3 overflow-hidden">
-            <p class="display-5">Willkommen auf unserer Seite!</p>
-            <p>Hier findet ihr Informationen zu wichtigen digitalen Kompetenzen.</p>
-            <p>
-                Digitale Kompetenzen braucht ihr, sobald ihr zum Beispiel ein Smartphone oder einen Computer verwendet - also eigentlich jeden Tag.
+            <p class="display-5">
+                Willkommen auf unserer Seite!
             </p>
+        </div>
+        <!-- Seiteninhalt -->
+        <div class="container mt-3 overflow-hidden">
             <p>
-                Zu digitalen Kompetenzen gehört zum Beispiel:
+                Hier findet ihr Informationen zu wichtigen digitalen Kompetenzen. <br> Digitale Kompetenzen braucht ihr, sobald ihr zum Beispiel ein Smartphone oder einen Computer verwendet - also eigentlich jeden Tag. <br> Zu digitalen Kompetenzen gehören zum Beispiel:
             </p>
             <ul>
-                <li>
-                    das Internet sicher verwenden
-                </li>
-                <li>
-                    beim Verwenden von Computern oder Smartphones auf die eigene Gesundheit achten
-                </li>
-                <li>
-                    im Internet richtig nach Inhalten suchen
-                </li>
-                <li>
-                    erkennen, ob eine Informationsquelle vertrauenswürdig ist
-                </li>
-                <li>
-                    Dateien strukturiert und sicher abspeichern
-                </li>
-                <li>
-                    mit anderen Menschen über digitale Werkzeuge (zum Beispiel E-Mail) kommunizieren
-                </li>
-                <li>
-                    bei digitaler Kommunikation auf Umgangsregeln achten ("Netiquette")
-                </li>
-                <li>
-                    beim Verwenden von Medien auf Urheber- und Nutzungsrechte achten
-                </li>
-                <li>
-                    Anwendungen kennen und anwenden (zum Beispiel Word)
-                </li>
-                <li>
-                    technische Probleme identifizieren (also herausfinden, wo ein Problem liegt)
-                </li>
-                <li>
-                    technische Probleme entweder selbst lösen (zum Beispiel mit Hilfe einer Google-Suche) oder den IT-Support kontaktieren
-                </li>
-                <li>
-                    digitale Medien (zum Beispiel Social Media wie Instagram) und ihre Wirkung auf dich kennen und verstehen 
-                </li>
+                <li>das Internet sicher verwenden</li>
+                <li>beim Verwenden von Computern oder Smartphones auf die eigene Gesundheit achten</li>
+                <li>im Internet richtig nach Inhalten suchen</li>
+                <li>erkennen, ob eine Informationsquelle vertrauenswürdig ist</li>
+                <li>Dateien strukturiert und sicher abspeichern</li>
+                <li>mit anderen Menschen über digitale Werkzeuge (zum Beispiel E-Mail) kommunizieren</li>
+                <li>bei digitaler Kommunikation auf Umgangsregeln achten ("Netiquette")</li>
+                <li>beim Verwenden von Medien auf Urheber- und Nutzungsrechte achten</li>
+                <li>Anwendungen kennen und anwenden (zum Beispiel Word)</li>
+                <li>technische Probleme identifizieren (also herausfinden, wo ein Problem liegt)</li>
+                <li>technische Probleme entweder selbst lösen (zum Beispiel mit Hilfe einer Google-Suche) oder den IT-Support kontaktieren</li>
+                <li>digitale Medien (zum Beispiel Social Media wie Instagram) und ihre Wirkung auf dich kennen und verstehen</li>
             </ul>
-
-            <p>
-                Weil es so viele digitale Kompetenzen gibt, können wir auf dieser Seite nicht auf alle eingehen. Wir haben uns deshalb erstmal für die Kategorie <em>Sicherheit</em> entschieden.
-            </p>
-            <p>
-                Vermutlich finden viele von euch das Thema Sicherheit nervig, schließlich kommt man auch ohne dieses Wissen aus - <strong>oder etwa nicht?</strong>
-            </p>
-            <p>
-                
-            </p>
+            <p>Weil es so viele digitale Kompetenzen gibt, können wir auf dieser Seite nicht auf alle eingehen. Wir haben uns deshalb erstmal für die Kategorie <em>Sicherheit</em> entschieden.<br> Vermutlich finden viele von euch das Thema Sicherheit nervig, schließlich kommt man auch ohne dieses Wissen aus - <strong>oder etwa nicht?</strong></p>
         </div>
+
+        <footer class="footer mt-3 pt-1 pb-1 bg-dark text-white">
+            <div class="container">
+                <hr>
+                <div class="row justify-content-around">
+                    <div class="col-auto align-self-center">
+                        <p>
+                        <a href="https://www.stiftung-liebenau.de/" target="_blank">
+                            <img src="https://lokcenter.github.io/Digitale_Kompetenzen_Website/media/StiftungLiebenauLogo.png" width="150px">
+                        </a>
+                        </p>
+                    </div>
+                    <div class="col-auto align-self-center">
+                        <p>
+                            Hier steht was interessantes
+                        </p>
+                    </div>
+                    <div class="col-auto align-self-center">
+                        <!-- <h3>
+                            Adresse
+                        </h3> -->
+                        <ul class="list-unstyled">
+                            <li>
+                                Liebenau Berufsbildungswerk gemeinnützige GmbH
+                            </li>
+                            <li>
+                                Außenstelle Lok-Center
+                            </li>
+                            <li>
+                                Pfannenstiel 16
+                            </li>
+                            <li>
+                                88214 Ravensburg
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </footer>
     </body>
+    <script>
+        document.getElementById("navbarTogglerButton").addEventListener("click", function() {
+            let navbar = document.getElementById("navbarSupportedContent");
+            navbar.classList.toggle("show");
+        });
+    </script>
 </html>
