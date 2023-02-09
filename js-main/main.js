@@ -10,9 +10,8 @@ $(document).ready(function() {
   });
 
 // Button für Navigationsleiste in mobiler Ansicht
-document.querySelector('.navbar-toggler').addEventListener('click', function() {
-  const target = document.querySelector('#navbarSupportedContent');
-  const isExpanded = this.getAttribute('aria-expanded') === 'true' || false;
-  this.setAttribute('aria-expanded', !isExpanded);
-  target.classList.toggle('show');
+$(document).ready(function() {
+  $('#navbarTogglerButton').onclick(function() {
+    $('#navbarSupportedContent').slideToggle(300, "linear");
+  });
 });
