@@ -59,8 +59,22 @@
 }
 
 /* Design Links */
-#alink {
-    text-decoration-line: underline;
-    text-decoration-thickness: 1px;
-    color:crimson;
+a:link {
+    text-decoration: none;
+    color: crimson;
+}
+
+a:visited {
+    text-decoration: none;
+    color: crimson;
+}
+
+a:hover {
+    text-decoration: dotted;
+    color:#212529;
+}
+
+a:active {
+    text-decoration: dotted;
+    color:#212529;
 }
