@@ -105,5 +105,5 @@ figcaption {
 
 /* Abstand zwischen card-img und card-body verringern */
 .card-body {
-    padding-top: 2px;
+    padding-top: 2px !important;
 }
