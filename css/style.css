@@ -93,3 +93,7 @@ a:active {
     border-left-color:#0dcaf0;
 }
 
+/* margin unter figure weg */
+.my-card-figure {
+    margin-block-end:0px;
+}
