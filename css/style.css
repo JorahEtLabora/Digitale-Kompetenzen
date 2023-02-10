@@ -102,3 +102,8 @@ a:active {
 figcaption {
     padding-right: 4px;
 }
+
+/* Abstand zwischen card-img und card-body verringern */
+.card-body {
+    padding-top: 2px;
+}
