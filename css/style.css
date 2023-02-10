@@ -97,3 +97,8 @@ a:active {
 .my-card-figure {
     margin-block-end:0px;
 }
+
+/* figcaption Padding links dazu */
+figcaption {
+    padding-left: 1px;
+}
