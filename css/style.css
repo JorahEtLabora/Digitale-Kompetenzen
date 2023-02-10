@@ -94,11 +94,6 @@ a:active {
 }
 
 /* Card Image Crop */
-/* .my-card-img {
-    height:50%;
-    object-fit:cover;
+.my-card-img {
+    height: 50%;
 }
-
-.my-card-figure {
-    height:50%;
-}  */
