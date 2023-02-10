@@ -95,6 +95,7 @@ a:active {
 
 /* Card Image Crop */
 .my-card-img {
+    width:auto;
     height:50%;
     object-fit:cover;
 }
