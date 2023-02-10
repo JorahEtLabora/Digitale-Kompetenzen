@@ -99,3 +99,7 @@ a:active {
     height:50%;
     object-fit:cover;
 }
+
+.my-card-figure {
+    height:fit-content;
+}
