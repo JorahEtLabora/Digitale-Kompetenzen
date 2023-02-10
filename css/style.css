@@ -99,6 +99,6 @@ a:active {
 }
 
 /* figcaption Padding links dazu */
-/* figcaption {
-    padding-left: 4px;
-} */
+figcaption {
+    padding-right: 4px;
+}
